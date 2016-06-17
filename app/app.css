@@ -1,4 +1,23 @@
 /* app css stylesheet */
+body {
+  background: url(assets/img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.age-area {
+  background-color:rgba(0, 0, 0, 0.59);
+  color:white;
+  margin-top:8%;
+  padding:10px;
+}
+
+.panel-body {
+  color:black;
+}
 
 .menu {
   list-style: none;
