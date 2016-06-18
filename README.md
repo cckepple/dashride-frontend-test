@@ -2,7 +2,9 @@
 ## Code Challenge ##
 ([live demo](http://age.coreykepple.xyz "Demo"))
 > Write an angular app that takes a user's birthday as an input, and displays their age as a result. In terms of user experience, take any liberty to create the birthday input in whatever way you feel is best. After the age has been generated, submit the user's birthday to the NumbersAPI to generate a fun fact about that that day. There should be some test coverage of the app.
+
 ---
+
 # dashride-frontend-test
 Dashride's front-end interview coding challenge skeleton.
 
