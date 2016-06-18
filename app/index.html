@@ -19,27 +19,29 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+  <video autoplay id="bgvid" loop>
+    <source src="http://www.bing.com/az/hprichv/?p=GlacierMtTL_Wilderness_TL2_deshake_13secs_EN-US.mp4" type="video/mp4">
+  </video>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div ng-view></div>
 
-  <div class="text-center" style="font-size:10px;">Angular seed app: v<span app-version></span></div>
+  <div class="text-center" style="font-size:10px;color:white">Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="/assets/js/ui-bootstrap-custom-tpls-1.3.3.js"></script>
+  <script src="assets/js/ui-bootstrap-custom-tpls-1.3.3.js"></script>
   <script src="app.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-  <script>
-      moment().format();
-  </script>
+  <script src="components/calcAge/calcage-services.js"></script>
+  <script src="components/calcAge/calcage-directives.js"></script>
+  <script src="components/calcAge/calcage-controller.js"></script>
 </body>
 </html>
