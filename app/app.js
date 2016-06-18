@@ -10,7 +10,7 @@ angular.module('myApp', [
   $locationProvider.hashPrefix('!');
 
   $routeProvider
-  .when('/calculate-age', {templateUrl: 'components/calcAge/calcage-view.html',   controller: 'CalcAgeCtrl'})
+  .when('/calculate-age', {templateUrl: 'components/calcage/calcage-view.html',   controller: 'CalcAgeCtrl'})
   .otherwise({ redirectTo: '/calculate-age' });
 
 }]);
