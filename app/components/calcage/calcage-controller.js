@@ -1,14 +1,13 @@
 angular.module('myApp')
 .controller('CalcAgeCtrl', function ($scope, $http, numbersApi, calcAge) {
   	$scope.openCalendar = function() {
-	  $scope.datePick.opened = true;
+	  $scope.dateSettings.opened = true;
 	};
 
-	//craete service for this
 	$scope.calculateAge = function() {
 		$scope.ageInfo = calcAge.getAge($scope.birthDay);
 		$scope.getFact();
-	}
+	};
 
 	$scope.getFact = function() {
 		numbersApi.getFact(numbersApi.makeUrl($scope.birthDay))
@@ -17,15 +16,17 @@ angular.module('myApp')
 			}, function(data){
 				console.log(data)
 		});
-	}
+	};
 
-  	$scope.format = 'MMMM, dd yyyy';
-  	$scope.dateOptions = {
-	    formatYear: 'yyyy',
-	    maxDate: new Date(),
-	    datepickerMode:'year'
-  	};
-  	$scope.datePick = {'opened':false};
+	$scope.dateSettings = {
+		format: 'MMMM, dd yyyy',
+		options:{
+			    formatYear: 'yyyy',
+			    maxDate: new Date(),
+			    datepickerMode:'year'
+  				},
+  		opened: false	
+	}
   	$scope.ageInfo = {};
 
 	
